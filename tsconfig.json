@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"outDir": "js",
+		"target": "es6",
+		"module": "es6",
+		"typeRoots": [
+			"./node_modules/@types"
+		]
+	},
+	"include": ["./ts/**/*"],
+}

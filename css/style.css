@@ -1,0 +1,52 @@
+:root {
+	--header-height: 8vh;
+	--item-height: 15vh;
+}
+
+body, html {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: #000;
+	color: rgb(240, 180, 180);
+}
+
+header {
+    height: var(--header-height);
+    border-bottom: 2px solid grey;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+	letter-spacing: 2px;
+}
+
+header h1 {
+	font-weight: 100;
+	font-size: 2em;
+}
+
+main {
+	height: calc(100vh - var(--header-height));
+	overflow-y: auto;
+}
+
+main div {
+    height: var(--item-height);
+    line-height: var(--item-height);
+    border: 1px solid rgb(56, 40, 92);
+    vertical-align: middle;
+    padding-left: calc(var(--item-height) / 2);
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+main div label {
+	padding-right: calc(var(--item-height) / 2);;
+}
+
+main div span {
+	color: rgb(153, 224, 241)
+}
